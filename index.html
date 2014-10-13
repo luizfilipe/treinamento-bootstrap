@@ -45,12 +45,22 @@
 
 				<section>
 					<h1>Treinamento Bootstrap</h1>
+<<<<<<< HEAD
 					<h3>Layout responsivo</h3>
 					<p>Noções gerais e implementação de<br>um template utilizando Bootstrap 3</p>
+=======
+					<br>
+					<h3>Layout responsivo</h3>
+					<br>
+					<p>Noções gerais e implementação de<br>um template utilizando Bootstrap 3</p>
+					<br>
+					<small>Bruno Ramalho - <a href="https://github.com/brunoramalho/Treinamento-Bootstrap">Github do treinamento</a></small>
+>>>>>>> gh-pages
 				</section>
 
 				<section>
 					<h2>Objetivo do treinamento</h2>
+<<<<<<< HEAD
 					<p>Promover aos participantes conhecimentos práticos sobre o framework Bootstrap, layout responsivo. Abordando o conceito de responsividade, estrutura do bootstrap, grids e componentes do framework.</p>
 				</section>
 
@@ -91,6 +101,261 @@
 						<li>Componentes (botões, inputs, radios, checkbox, ...)</li>
 					</ul>
 				</section>
+=======
+					<br>
+					<p>Promover aos participantes conhecimentos práticos sobre o framework Bootstrap e aplicação em layouts responsivos.</p>
+					<br>
+					<p>Vamos abordar o conceito de responsividade, estrutura do bootstrap, <a>funcionamento da grid</a>, componentes do framework, estudo de uso incorreto e <a>aplicações práticas</a>.</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>Vamos ao que interessa!</h2>
+						<br>
+						<ul>
+							<li><a>Responsividade</a></li>
+							<li>Frameworks CSS Responsivos</li>
+							<li>Bootstrap</li>
+							<li>Casos de uso</li>
+							<li>Aplicação prática</li>
+						</ul>
+					</section>
+					
+					<section>
+						<h2>Responsividade</h2>
+						<br>
+						<ul>
+							<li>Porque usar Layout Responsivo?</li>
+							<li>Qual a importância do Layout Responsivo?</li>
+							<li>Layout Fixo x Líquido x Responsivo</li>
+						</ul>						
+					</section>
+				</section>
+
+
+				<section>
+					<h2>Layout Responsivo? É importante?</h2>
+					<br>
+					<p>Responsividade tem crescido junto com o crescimento do mercado de dispositivos móveis, principalmente por conta de tablets e smartphones.</p>
+					<br>
+					<p>Neste novo contexto de várias resoluções, responsividade surge como uma <a>evolução lógica do desenvolvimento web</a>.</p>
+					<br>
+					<p>Claro que não podemos achar que isso resolve todos os problemas e talvez nem seja a solução definitiva para todos, <a>mas com certeza é um caminho a ser seguido</a> e ainda mais explorado.</p>
+				</section>
+
+				<section>
+					<section>
+						<h2><a>Fixo</a> x Líquido x Responsivo</h2>
+						<br>
+						<p>Este é o formato que mais utilizamos, talvez o mais comum, por enquanto. Neste modelo a página <a>tem tamanho fixo para tudo</a>, independente de onde está sendo visualizada.</p>
+					</section>
+
+					<section>
+						<h2>Fixo x <a>Líquido</a> x Responsivo</h2>
+						<br>
+						<p>Este tipo de design se preocupa em construir tudo em <a>tamanhos flexíveis (%, em, rem)</a>, nunca, ou quase nunca utilizando números fixos na sua construção.</p>
+						<br>
+						<p>O tamanho do site será, por exemplo, terá 80% da tela, a sidebar terá 30% e o conteúdo terá 70% desses 80%.</p>
+					</section>
+
+					<section>
+						<h2>Fixo x Líquido x <a>Responsivo</a></h2>
+						<br>
+						<p>Nesta técnica o site é construído de forma que ele tente se <a>adaptar</a> o melhor possível a tela em que esta sendo carregado.</p>
+						<br>
+						<p>A idéia aqui é proporcionar a melhor experiência para o usuário, nesta técnica utiliza-se bastante das <a>media queries</a> para definir como o site deve se comportar em cada momento, <a>é uma mistura do design fixo e design fluído</a>.</p>
+					</section>
+				</section>
+
+				<section>
+					<h2>Media Queries</h2>
+					<br>
+					<p>As <a>Media Queries definem condições</a> para a utilização de um CSS específico. Se essas condições forem aprovadas, ou seja, se o dispositivo de adequar a todas as condições, o CSS será aplicado.</p>
+					<br>
+					<small>Vale ressaltar que media queries só são <a>aceitas nativamente a partir do IE9</a></small>
+					<br>
+					<pre><code data-trim>
+body { background: blue; }
+
+@media screen and ( max-width: 320px ) {
+   body { background: red; }
+}
+
+@media screen and ( min-width: 321px ) and ( max-width: 480px ) {
+   body { background: green; }
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Frameworks CSS Responsivos</h2>
+					<br>
+					<ul>
+						<li><a href="http://foundation.zurb.com/">Foundation</a> - Zurb</li>
+						<li><a href="http://getbootstrap.com/">Bootstrap</a> - Twitter</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h2>Bootstrap</h2>
+						<br>
+						<ul>
+							<li><a>O que é?</a></li>
+							<li>Como funciona?</li>
+							<li>Conceito de grids</li>
+							<li>Componentes (botões, inputs, radios, checkbox, ...)</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>O que é Bootstrap?</h2>
+						<br>
+						<p>O Twitter Bootstrap foi projetado para <a>auxiliar as pessoas</a>, seja você um desenvolvedor client-side ou back-end.</p>
+						<br>
+						<p>O intuito dele é ser <a>um poderoso aliado na montagem de páginas HTML Responsivas</a>, de forma rápida e simples.</p>
+						<br>
+						<p>No entanto é preciso enfatizar que ele foi desenvolvido para <a href="http://getbootstrap.com/getting-started/#support">navegadores modernos</a>, mas ainda é compatível mesmo que não 100% com Internet Explorer 8+, através do <a href="https://github.com/scottjehl/Respond">RespondJS</a>.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Bootstrap</h2>
+						<br>
+						<ul>
+							<li>O que é?</li>
+							<li><a>Como funciona?</a></li>
+							<li>Conceito de grids</li>
+							<li>Componentes (botões, inputs, radios, checkbox, ...)</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Como funciona?</h2>
+						<br>
+						<pre><code data-trim>
+bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.min.css
+│   ├── bootstrap-theme.css
+│   └── bootstrap-theme.min.css
+├── js/
+│   ├── bootstrap.js
+│   └── bootstrap.min.js
+└── fonts/
+    ├── glyphicons-halflings-regular.eot
+    ├── glyphicons-halflings-regular.svg
+    ├── glyphicons-halflings-regular.ttf
+    └── glyphicons-halflings-regular.woff
+    				</code></pre>
+						<br>
+						<p>Você pode baixar atráves do <a href="http://getbootstrap.com/getting-started/#download">site oficial</a> ou do <a href="https://github.com/twbs/bootstrap">github</a>, ou ainda <a href="http://getbootstrap.com/customize/">customizar seu pacote</a> caso necessário.</p>
+					</section>
+
+					<section>
+						<h2>Como funciona?</h2>
+						<br>
+						<p>Você precisa incluir as seguintes linhas no HTML, para que o Bootstrap funcione corretamente.</p>
+						<br>
+						<pre><code data-trim>
+[...]
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+[...]
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+[...]
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+[...]
+						</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Bootstrap</h2>
+						<br>
+						<ul>
+							<li>O que é?</li>
+							<li>Como funciona?</li>
+							<li><a>Conceito de grids</a></li>
+							<li>Componentes (botões, inputs, radios, checkbox, ...)</li>
+						</ul>
+					</section>
+					
+					<section>
+						<h2>Conceito de Grid</h2>
+						<br>
+						<p>O Bootstrap trabalha em cima de um <a>complexo sistema de grids</a>, que nada mais é que montarmos o nosso site/sistema em cima de <a>colunas e linhas</a>, ele trabalha tanto com grid líquida, como com grid fixa, ou grid responsiva.</p>
+						<br>
+						<p>Grosseiramente você pode comparar as grids com tabelas, mas a forma <a>como o browser lê a informação é completamente diferente</a>.</p>
+					</section>
+
+					<section>
+						<h2>Exemplo de Grid</h2>
+						<br>
+						<pre><code data-trim contenteditable>
+<div class="row">
+  <div class="col-md-1">.col-md-1</div>
+  [...]
+  <div class="col-md-1">.col-md-1</div>
+</div>
+<div class="row">
+  <div class="col-md-8">.col-md-8</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+						</code></pre>
+						<img src="imgs/exemplo-grid.png" height="176" width="877" alt="">
+					</section>
+
+					<section>
+						<h2>Padrão da Grid do Bootstrap</h2>
+						<br>
+						<img src="imgs/esp-grid.png" height="392" width="847" alt="">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Bootstrap</h2>
+						<br>
+						<ul>
+							<li>O que é?</li>
+							<li>Como funciona?</li>
+							<li>Conceito de grids</li>
+							<li><a>Componentes (botões, inputs, radios, checkbox, ...)</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Componentes</h2>
+						<br>
+						<p>O Bootstrap é muito mais que apenas um sistema de grid, ele é um framework para desenvolvimento de aplicações, possuindo muitos componentes prontos, para o caso de necessário se montar um sistema completo, que não possua design, por exemplo, ou até mesmo aplicar a um design pronto.</p>
+						<br>
+					</section>
+
+					<section>
+						<h2>Componentes</h2>
+						<br>
+						<p>Ícones, Dropdowns, Botões, Formulário, Menus de navegação, Breadcrumbs, Paginaçao, Labels, Badges, Texto, Alertas, Barras de progresso, Objetos de mídia, Tabelas responsivas, <br>Embed responsivos, e outros.</p>
+						<br>
+						<p>Aqui você encontra a <a target="_blank" href="http://getbootstrap.com/components">lista completa</a> de componentes do Bootstrap com sua documentação.</p>
+					</section>
+				</section>
+>>>>>>> gh-pages
 				
 				<section>
 					<h2>Casos de uso</h2>
@@ -105,8 +370,11 @@
 					<p>Criaremos na prática uma página utilizando Bootstrap</p>
 				</section>
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> gh-pages
 			</div>
 
 		</div>
