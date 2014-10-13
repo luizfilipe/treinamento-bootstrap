@@ -137,14 +137,166 @@ body { background: blue; }
 				</section>
 
 				<section>
-					<h2>Bootstrap</h2>
-					<br>
-					<ul>
-						<li>O que é ?</li>
-						<li>Como funciona?</li>
-						<li>Conceito de grids</li>
-						<li>Componentes (botões, inputs, radios, checkbox, ...)</li>
-					</ul>
+					<section>
+						<h2>Bootstrap</h2>
+						<br>
+						<ul>
+							<li><a>O que é?</a></li>
+							<li>Como funciona?</li>
+							<li>Conceito de grids</li>
+							<li>Componentes (botões, inputs, radios, checkbox, ...)</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>O que é Bootstrap?</h2>
+						<br>
+						<p>O Twitter Bootstrap foi projetado para auxiliar as pessoas, seja você um desenvolvedor client-side ou back-end.</p>
+						<br>
+						<p>O intuito dele é ser uma poderosa ferramenta afim de auxiliar na montagem de páginas HTML Responsivas, de forma rápida e simples.</p>
+						<br>
+						<p>É preciso enfatizar que foi desenvolvido para <a href="http://getbootstrap.com/getting-started/#support">navegadores modernos</a>, mas ainda é compatível mesmo que não 100% com Internet Explorer 8+, mas para que a responsividade funcione com Internet Explorer 8 precisa ser incluido o <a href="https://github.com/scottjehl/Respond">RespondJS</a>.</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Bootstrap</h2>
+						<br>
+						<ul>
+							<li>O que é?</li>
+							<li><a>Como funciona?</a></li>
+							<li>Conceito de grids</li>
+							<li>Componentes (botões, inputs, radios, checkbox, ...)</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Como funciona?</h2>
+						<br>
+						<p>Você pode baixar atráves do <a href="http://getbootstrap.com/getting-started/#download">site oficial</a> ou do <a href="https://github.com/twbs/bootstrap">github</a>, ou ainda <a href="http://getbootstrap.com/customize/">customizar seu pacote</a> como for necessário.</p>
+						<br>
+						<pre><code data-trim>
+bootstrap/
+├── css/
+│   ├── bootstrap.css
+│   ├── bootstrap.min.css
+│   ├── bootstrap-theme.css
+│   └── bootstrap-theme.min.css
+├── js/
+│   ├── bootstrap.js
+│   └── bootstrap.min.js
+└── fonts/
+    ├── glyphicons-halflings-regular.eot
+    ├── glyphicons-halflings-regular.svg
+    ├── glyphicons-halflings-regular.ttf
+    └── glyphicons-halflings-regular.woff
+    				</code></pre>
+					</section>
+
+					<section>
+						<h2>Como funciona?</h2>
+						<br>
+						<pre><code data-trim>
+[...]
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+[...]
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+[...]
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+[...]
+						</code></pre>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Bootstrap</h2>
+						<br>
+						<ul>
+							<li>O que é?</li>
+							<li>Como funciona?</li>
+							<li><a>Conceito de grids</a></li>
+							<li>Componentes (botões, inputs, radios, checkbox, ...)</li>
+						</ul>
+					</section>
+					
+					<section>
+						<h2>Conceito de Grid</h2>
+						<br>
+						<p>O Bootstrap trabalha em cima do conceito de grids, que nada mais é que montarmos o nosso site/sistema em cima de colunas e linhas, ele trabalha tanto com grid líquida, como com grid fixa, ou uma mistura das duas caso necessário.</p>
+						<br>
+						<p>Grosseiramente você pode comparar as grids com tabelas, mas a forma como o browser lê a informação é completamente diferente.</p>
+					</section>
+
+					<section>
+						<h2>Exemplo de Grid</h2>
+						<br>
+						<pre><code data-trim contenteditable>
+<div class="row">
+  <div class="col-md-1">.col-md-1</div>
+  [...]
+  <div class="col-md-1">.col-md-1</div>
+</div>
+<div class="row">
+  <div class="col-md-8">.col-md-8</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+						</code></pre>
+					</section>
+
+					<section>
+						<h2>Exemplo de Grid</h2>
+						<br>
+						<img src="imgs/exemplo-grid.png" height="176" width="877" alt="">
+					</section>
+
+					<section>
+						<h2>Detalhes da Grid</h2>
+						<br>
+						<img src="imgs/esp-grid.png" height="392" width="847" alt="">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Bootstrap</h2>
+						<br>
+						<ul>
+							<li>O que é?</li>
+							<li>Como funciona?</li>
+							<li>Conceito de grids</li>
+							<li><a>Componentes (botões, inputs, radios, checkbox, ...)</a></li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Componentes</h2>
+						<br>
+						<p>O Bootstrap é muito mais que apenas um sistema de grid, ele é um framework para desenvolvimento de aplicações, possuindo muitos componentes prontos, para o caso de necessário se montar um sistema completo, que não possua design, por exemplo, ou até mesmo aplicar a um design pronto.</p>
+						<br>
+					</section>
+
+					<section>
+						<h2>Componentes</h2>
+						<br>
+						<p>Ícones, Dropdowns, Botões, Formulário, Menus de navegação, Breadcrumbs, Paginaçao, Labels, Badges, Texto, Alertas, Barras de progresso, Objetos de mídia, Tabelas responsivas, <br>Embed responsivos, e outros.</p>
+						<br>
+						<p>Aqui você encontra a <a target="_blank" href="http://getbootstrap.com/components">lista completa</a> de componentes do Bootstrap com sua documentação.</p>
+					</section>
 				</section>
 				
 				<section>
