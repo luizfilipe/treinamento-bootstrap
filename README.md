@@ -1,8 +1,8 @@
 # Treinamento de Bootstrap 3.2
 
-Esse projeto foi criado no intuito de complementar o treinamento de Bootstrap, criei um css com algumas classes uteis, afim de manter vocês mais focados possível na aplicação prática do Bootstrap.
+Esse projeto foi criado no intuito de complementar o treinamento de Bootstrap, criei um css com algumas classes úteis, afim de manter vocês mais focados possível na aplicação prática do Bootstrap.
 
-Colocando em prática as funcionalidades da grid, responsividade e qualquer outra coisa que julgarem interessante utilizarem.
+Colocando em prática as funcionalidades da grid, responsividade e qualquer outra coisa que julgarem interessante utilizar.
 
 Abaixo segue a lista de classes que criei para ajudá-los:
 
@@ -20,13 +20,13 @@ Abaixo segue a lista de classes que criei para ajudá-los:
 Algumas coisas já foram padronizadas como a cor de background da página, cor do texto, tamanho e familia de fonte.
 
 ### Ícones
-Para utilizar os ícones basta colocar a tag <i>
+Para utilizar os ícones basta colocar a seguinte tag:
 
 ```html
 <i class=""></i>
 ```
 
-E acrescentar a classe do ícone que desejar
+E acrescentar a classe do ícone que desejar:
 
 ```css
 .icon-circle /* bolinhas de navegacao da galeria */
@@ -38,4 +38,43 @@ E acrescentar a classe do ícone que desejar
 .icon-facebook /* icone facebook */
 .icon-twitter /* icone twitter */
 .icon-linkedin /* icone linkedin */
+```
+
+Com essas classes e elementos acima, você conseguirá fazer bastante coisa sem quase nenhuma intervenção em arquivos css.
+
+Para ajudar ainda mais, abaixo uma lista com algumas classes do Bootstrap que serão também úteis.
+
+### Classes Bootstrap
+```css
+.container /* container fixo */
+.row /* definir linhas, usado para correção de flutuacoes */
+
+ /* largura das colunas */
+.col-xs-x
+.col-sm-x
+.col-md-x
+.col-lg-x
+
+ /* deslocamento das colunas */
+.col-xs-offset-x
+.col-sm-offset-x
+.col-md-offset-x
+.col-lg-offset-x
+
+ /* flutuacao do objeto */
+.pull-left
+.pull-right
+
+ /* alinhamento de texto */
+.text-left
+.text-center
+.text-right
+
+.text-lowercase /* transformando otexto em caixa baixa */
+.text-uppercase /* transformando o texto em caixa alta */
+
+.list-inline /* alterando a exibição da lista para em linha */
+
+.img-responsive /* aplicando responsividade a imagem */
+.img-circle /* transformando imagem em circulo */
 ```
