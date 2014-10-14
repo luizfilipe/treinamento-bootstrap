@@ -78,3 +78,5 @@ Para ajudar ainda mais, abaixo uma lista com algumas classes do Bootstrap que se
 .img-responsive /* aplicando responsividade a imagem */
 .img-circle /* transformando imagem em circulo */
 ```
+
+Você pode verificar a aplicação de algumas dessas classes no modelo de arquivo que montei https://github.com/brunoramalho/treinamento-bootstrap/blob/master/modelo.html.
