@@ -1,4 +1,4 @@
-# Treinamento de Bootstrap 3.2
+# Treinamento de Bootstrap
 
 Esse projeto foi criado no intuito de complementar o treinamento de Bootstrap, criei um css com algumas classes úteis, afim de manter vocês mais focados possível na aplicação prática do Bootstrap.
 
