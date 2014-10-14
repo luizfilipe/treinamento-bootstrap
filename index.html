@@ -31,6 +31,14 @@
 			}
 		</script>
 
+		<style>
+		.reveal section img{
+			background: none;
+			border: none;
+			box-shadow: none;
+		}
+		</style>
+
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
@@ -157,7 +165,7 @@ body { background: blue; }
 							<li><a>O que é?</a></li>
 							<li>Como funciona?</li>
 							<li>Conceito de grids</li>
-							<li>Componentes (botões, inputs, radios, checkbox, ...)</li>
+							<li>Componentes</li>
 						</ul>
 					</section>
 
@@ -180,7 +188,7 @@ body { background: blue; }
 							<li>O que é?</li>
 							<li><a>Como funciona?</a></li>
 							<li>Conceito de grids</li>
-							<li>Componentes (botões, inputs, radios, checkbox, ...)</li>
+							<li>Componentes</li>
 						</ul>
 					</section>
 
@@ -210,7 +218,7 @@ bootstrap/
 					<section>
 						<h2>Como funciona?</h2>
 						<br>
-						<p>Você precisa incluir as seguintes linhas no HTML, para que o Bootstrap funcione corretamente.</p>
+						<p>Você precisa <a>incluir as seguintes</a> linhas no HTML, para que o Bootstrap funcione corretamente.</p>
 						<br>
 						<pre><code data-trim>
 [...]
@@ -240,7 +248,7 @@ bootstrap/
 							<li>O que é?</li>
 							<li>Como funciona?</li>
 							<li><a>Conceito de grids</a></li>
-							<li>Componentes (botões, inputs, radios, checkbox, ...)</li>
+							<li>Componentes</li>
 						</ul>
 					</section>
 					
@@ -278,6 +286,8 @@ bootstrap/
 						<h2>Padrão da Grid do Bootstrap</h2>
 						<br>
 						<img src="imgs/esp-grid.png" height="392" width="847" alt="">
+						<br>
+						<p>Uma ótima ferramenta para cálculo e construção de grids consistentes é o <a target="_blank" href="http://gridcalculator.dk/#/1200/12/30/15">GridCalculator</a>.</p>
 					</section>
 
 					<section>
@@ -286,7 +296,21 @@ bootstrap/
 						<pre><code data-trim>
 //fixando a largura de um elemento
 .container
+//definindo as colunas
+.col-xs-x .col-sm-x .col-md-x .col-lg-x
+//limpando flutuações incorretas
+.row .clearfix
+//exibindo ou ocultando elementos para determinados dispositivos
+.visible-xs-block .visible-sm-block .visible-md-block .visible-lg-block
+.hidden-xs .hidden-sm .hidden-md .hidden-lg
+//deslocando a coluna
+.col-xs-offset-x .col-sm-offset-x .col-md-offset-x .col-lg-offset-x
+//alterando a posição de duas coluas
+.col-xs-push-x .col-sm-push-x .col-md-push-x .col-lg-push-x
+.col-xs-pull-x .col-sm-pull-x .col-md-pull-x .col-lg-pull-x
 						</code></pre>
+						<br>
+						<p>Aqui você encontra a <a target="_blank" href="http://getbootstrap.com/css">lista completa</a> de classes<br> e guia de estilização.</p>
 					</section>
 				</section>
 
@@ -298,37 +322,85 @@ bootstrap/
 							<li>O que é?</li>
 							<li>Como funciona?</li>
 							<li>Conceito de grids</li>
-							<li><a>Componentes (botões, inputs, radios, checkbox, ...)</a></li>
+							<li><a>Componentes</a></li>
 						</ul>
 					</section>
 
 					<section>
 						<h2>Componentes</h2>
 						<br>
-						<p>O Bootstrap é muito mais que apenas um sistema de grid, ele é um framework para desenvolvimento de aplicações, possuindo muitos componentes prontos, para o caso de necessário se montar um sistema completo, que não possua design, por exemplo, ou até mesmo aplicar a um design pronto.</p>
+						<p>O Bootstrap é <a>muito mais que apenas um sistema de grid</a>, ele é um framework para desenvolvimento de aplicações, possuindo muitos componentes prontos, para o caso de necessário se <a>montar um sistema completo</a>, que não possua design, por exemplo, ou até mesmo aplicar a um design pronto.</p>
 						<br>
 					</section>
 
 					<section>
 						<h2>Componentes</h2>
 						<br>
-						<p>Ícones, Dropdowns, Botões, Formulário, Menus de navegação, Breadcrumbs, Paginaçao, Labels, Badges, Texto, Alertas, Barras de progresso, Objetos de mídia, Tabelas responsivas, <br>Embed responsivos, e outros.</p>
+						<p>Ícones, Dropdowns, Botões, Formulário, Menus de navegação, Breadcrumbs, Paginaçao, Labels, Badges, Texto, Alertas, Barras de progresso, Objetos de mídia, Tabelas responsivas, <br>Embed responsivo, e outros.</p>
 						<br>
 						<p>Aqui você encontra a <a target="_blank" href="http://getbootstrap.com/components">lista completa</a> de componentes do Bootstrap com sua documentação.</p>
 					</section>
 				</section>
 				
 				<section>
-					<h2>Casos de uso</h2>
-					<ul>
-						<li>Exemplo de problemas com override de regras da grid responsiva</li>
-						<li>Exemplo de aplicação limpa com ganho de tempo e esforço</li>
-					</ul>
+					<section>
+						<h2>Exemplo de uso incorreto</h2>
+						<br>
+						<p><a>Evite sempre fazer override de regras</a> complexas do bootstrap, a formação da grid do bootstrap é composta por um complexo cálculo feito em Less [ <a href="https://github.com/twbs/bootstrap/blob/master/less/mixins/grid.less">1</a> / <a href="https://github.com/twbs/bootstrap/blob/master/less/mixins/grid-framework.less">2</a> ] e/ou Sass [ <a href="https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/mixins/_grid-framework.scss">1</a> / <a href="https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/mixins/_grid.scss">2</a> ].</p>
+						<br>
+						<p>Ficar zerando ou alterando valores, pode fazer com que o comportamento padrão responsivo do framework <a>não funcione corretamente</a>.</p>
+					</section>
+
+					<section>
+						<h2>Exemplo de uso incorreto</h2>
+						<br>
+						<pre><code data-trim>
+.container {
+  width: 100% !important;
+  padding: 0;
+}
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+.col-md-8, .col-md-12, .col-md-4 {
+  padding-right: 0;
+  padding-left: 0;
+}
+.third-row .col-md-4 {
+  padding-left: 0;
+}
+</code></pre>
+					</section>
 				</section>
 				
 				<section>
-					<h2>Aplicação prática</h2>
-					<p>Criaremos na prática uma página utilizando Bootstrap</p>
+					<section>
+						<h2>Aplicação prática</h2>
+						<br>
+						<p><a>Para não ficar só na conversa</a>, e amanhã nem lembrarmos de mais nada, vamos montar na prática usando <br>o layout do atual site da <a target="_blank" href="http://www.teratap.com.br">TeraTap</a>.</p>
+						<img src="imgs/aplicacao.png" height="354" width="860" alt="">
+					</section>
+
+					<section>
+						<h2>Aplicação prática</h2>
+						<br>
+						<p>Pra começar clone o <a target="_blank" href="https://github.com/brunoramalho/Treinamento-Bootstrap">projeto que está no github</a>.</p>
+						<br>
+						<p>Nele já estão inclusos todos os arquivos necessários para a montagem do site, bastando apenas botar a mão na massa.</p>
+						<br>
+						<p>Nesse projeto vamos usar a <a>grid padrão do bootstrap</a>, com 12 colunas, um gutter entre-colunas de 30px e margin de 15px.</p>
+					</section>
+				</section>
+
+				<section>
+					<h1>Treinamento Bootstrap</h1>
+					<br>
+					<h3>Layout responsivo</h3>
+					<br>
+					<p>Noções gerais e implementação de<br>um template utilizando Bootstrap 3</p>
+					<br>
+					<small>Bruno Ramalho - <a href="https://github.com/brunoramalho/Treinamento-Bootstrap">Github do treinamento</a></small>
 				</section>
 
 			</div>
